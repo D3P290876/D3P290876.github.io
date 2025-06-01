@@ -43,6 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
         input.addEventListener("input", updateValues);
     });
 
+    updateValues();
+
     function formatNumber(value) {
         return value % 1 === 0 ? value.toString() : value.toFixed(8).replace(/\.?0+$/, "");
     }
